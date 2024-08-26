@@ -1,0 +1,13 @@
+versions: '3'
+services:
+  train:
+    image: akhi209/dockertrain:latest
+    ports:
+      - "80:80"
+    replicas: 3  
+  dth:
+    image: akhi209/dockerdth:latest
+    ports:
+      - "81:80"
+     replicas: 3  
+
